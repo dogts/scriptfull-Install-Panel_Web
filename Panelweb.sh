@@ -124,7 +124,7 @@ echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mRedirigiendo "; fun_prog
 sleep 1
 echo -e " "
 sudo rm -rf /root/Panelweb.sh > /dev/null 2>&1
-wget https://painel.anasor.com/scriptfull/Install/Panel_Web/Panelweb.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/dogts/scriptfull-Install-Panel_Web/master/Panelweb.sh > /dev/null 2>&1
 chmod +x Panelweb.sh; ./Panelweb.sh
 }
 
