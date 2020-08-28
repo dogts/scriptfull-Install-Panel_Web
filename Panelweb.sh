@@ -70,7 +70,7 @@ panel_v15_2 () {
     wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v15_2/ocspanel > /dev/null 2>&1; chmod +x ocspanel; ./ocspanel
 }
 panel_v20 () {
-    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/dogts/scriptfull-Install-Panel_Web/master/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v20_mod () {
     wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v20_mod/install > /dev/null 2>&1; chmod +x install; ./install
