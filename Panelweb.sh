@@ -48,11 +48,38 @@ sudo rm -rf /var/www/html
 }
 
 ##PANIL A INSTALAR
+panel_v10 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v10/Painel.sh > /dev/null 2>&1; chmod +x Painel.sh; ./Painel.sh
+}
+panel_v10_2 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v10_2/install.sh > /dev/null 2>&1; chmod +x install.sh; ./install.sh
+}
+panel_v11 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v11/Painelv11.sh > /dev/null 2>&1; chmod +x Painelv11.sh; ./Painelv11.sh
+}
+panel_v11_2 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v11_2/install > /dev/null 2>&1; chmod +x install; ./install
+}
+panel_v12 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v12/install > /dev/null 2>&1; chmod +x install; ./install
+}
+panel_v15 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v15/install > /dev/null 2>&1; chmod +x install; ./install
+}
+panel_v15_2 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v15_2/ocspanel > /dev/null 2>&1; chmod +x ocspanel; ./ocspanel
+}
 panel_v20 () {
-    wget https://raw.githubusercontent.com/dogts/scriptfull-Install-Panel_Web/master/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
+}
+panel_v20_mod () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v20_mod/install > /dev/null 2>&1; chmod +x install; ./install
+}
+panel_v23 () {
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v23/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v25 () {
-    wget https://raw.githubusercontent.com/dogts/scriptfull-Install-Panel_Web/master/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
 }
 
 ##PANIL REMOVE
@@ -97,7 +124,7 @@ echo -ne "\033[1;33m[\033[1;31m ! \033[1;33m] \033[1;31mRedirigiendo "; fun_prog
 sleep 1
 echo -e " "
 sudo rm -rf /root/Panelweb.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/dogts/scriptfull-Install-Panel_Web/master/Panelweb.sh > /dev/null 2>&1
+wget https://painel.anasor.com/scriptfull/Install/Panel_Web/Panelweb.sh > /dev/null 2>&1
 chmod +x Panelweb.sh; ./Panelweb.sh
 }
 
@@ -108,16 +135,16 @@ echo -e "$barra"
 echo -e "\E[41;1;37m        ⇱ INSTALAR O PAINEL SSH/DROP/SSL Digital Apps© ⇲        \E[0m"
 echo -e "$barra"
 echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V10      \033[1;31m(ANT) 
-\033[1;31m[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V10 2    \033[1;32m(OFF) 
-\033[1;31m[\033[1;36m03\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V11      \033[1;31m(OFF) 
-\033[1;31m[\033[1;36m04\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V11 2    \033[1;32m(OFF) 
-\033[1;31m[\033[1;36m05\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V12      \033[1;32m(OFF) 
-\033[1;31m[\033[1;36m06\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V15      \033[1;31m(OFF) 
-\033[1;31m[\033[1;36m07\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V15 2    \033[1;33m(OFF)
-\033[1;31m[\033[1;36m08\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V20      \033[1;32m(ON) \033[1;36m•
-\033[1;31m[\033[1;36m09\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V20 MOD  \033[1;32m(OFF) 
-\033[1;31m[\033[1;36m10\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V23      \033[1;32m(OFF) 
-\033[1;31m[\033[1;36m11\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V25      \033[1;35m(ON) 
+\033[1;31m[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V10 2    \033[1;32m(DAN) 
+\033[1;31m[\033[1;36m03\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V11      \033[1;31m(ANT) 
+\033[1;31m[\033[1;36m04\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V11 2    \033[1;32m(NEW) 
+\033[1;31m[\033[1;36m05\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V12      \033[1;32m(NEW) 
+\033[1;31m[\033[1;36m06\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V15      \033[1;31m(ANT) 
+\033[1;31m[\033[1;36m07\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V15 2    \033[1;33m(OCS)
+\033[1;31m[\033[1;36m08\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V20      \033[1;32m(NEW) \033[1;36m•
+\033[1;31m[\033[1;36m09\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V20 MOD  \033[1;32m(NEW) 
+\033[1;31m[\033[1;36m10\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V23      \033[1;32m(NEW) 
+\033[1;31m[\033[1;36m11\033[1;31m] \033[1;37m• \033[1;33mPANEL SSHPLUS WEB V25      \033[1;35m(ADE) 
 \033[1;31m[\033[1;36m12\033[1;31m] \033[1;37m• \033[1;33mPREPARAR HTML FOLDER  
 \033[1;31m[\033[1;36m13\033[1;31m] \033[1;37m• \033[1;33mPANEL REMOVE
 \033[1;31m[\033[1;36m00\033[1;31m] \033[1;37m• \033[1;33mSALIR \033[1;32m<\033[1;33m<\033[1;31m<\033[0m \033[0m"
