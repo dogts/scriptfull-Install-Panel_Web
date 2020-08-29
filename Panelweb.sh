@@ -52,7 +52,7 @@ panel_v20 () {
     wget https://raw.githubusercontent.com/dogts/scriptfull-Install-Panel_Web/master/panel_v20/install > /dev/null 2>&1; chmod +x install; ./install
 }
 panel_v25 () {
-    wget https://painel.anasor.com/scriptfull/Install/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
+    wget https://raw.githubusercontent.com/dogts/scriptfull-Install-Panel_Web/master/panel_v25/install > /dev/null 2>&1; chmod +x install; ./install
 }
 
 ##PANIL REMOVE
